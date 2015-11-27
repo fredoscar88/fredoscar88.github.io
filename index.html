@@ -5,21 +5,31 @@
 <p>Latest MSP Version: Alpha 1.0.2</p>
 <a href="/MSPLite/Download.zip">Link to MSPLite download</a>
 <p>Changelog:</p>
+<p>Hoo boy, is this one helluvan update</p>
 <ul>
-<li>-Added general properties file (MSP.properties)</li>
-<li>-You can set your own server starting arguments in the properties file</li>
-<li>-MSP can now be run without the batch file, but only if you do not want to have access to the MSP Console window</li>
-<li>-Added "INIT" feature</li>
-<li>-Redstone is now set into an output file, that can be called upon again to replace the redstone with ReplaceRedstone in the console or !RplRdStone ingame</li>
-<li>-MSP now only sends one packet to the server instead of several when setting redstone</li>
-<li>-Server should no longer "hang" with 20hz "/say"s</li>
-<li>-General ground work to prepare for changes to how the redstone is calculated</li>
-<li>-Probably some other stuff I'm forgetting</li>
+<li>-Changed syntax handling</li>
+<li>-Adding ":NEW SET" to a file now starts a new chain of command blocks</li>
+<li>-"POS" and "PAT" when defined after ":NEW SET" define the position (of the first block) and pattern of that set</li>
+<li>-If "POS/PAT" aren't specified after ":NEW SET", the "POS/PAT" default to what's in MSP.properties</li>
+<li>-Due to the logic of the other above features it is now possible to overwrite previous command block lines</li>
+<li>-Updated line interpreting, fixed a bug regarding the first "block line" of a file</li>
+<li>-Added ability to change the redstone directory (now you can switch between projects more easily)</li>
+<li>-Added ability to turn on and off players' ability to run commands, like "!OpMe". This is the OIT setting and defaults to false.</li>
+<li>-Added ability to add your own MSP enabled commands, inside "cc.txt" in the MSPPlayers directory</li>
+<li>-Added advanced readme file, including a syntax guide and info on MSP.properties. See this for help withthe above 2 features.</li>
+<li>-Added "scripting", you can write a list of commands to be executed at once in the Scripts directory</li>
+<li>-Lines beginning with "//" are now treated as comments</li>
+<li>-Added better support for identifying players on teams (when they run commands)</li>
+<li>-Re-wrote, re-worked a lot of legacy code. Currently this is still sitting in the source, but is unused.</li>
+<li>And probably some other minor details that I've neglected to mention</li>
+<li>Need to create a comprehensive list of bugs at some point, too.</li>
 </ul>
 
 <p>Links to previous versions coming soon, now that some exist</p>
 <a href="/MSPLite/Alpha1.0.zip">Alpha 1.0</a>
 <a href="/MSPLite/Alpha1.0.1.zip">Alpha 1.0.1</a>
+<a href="/MSPLite/Alpha1.0.2.zip">Alpha 1.0.2</a>
+<a href="/MSPLite/Alpha1.0.2.zip">Alpha 1.0.3</a>
 <br>
 
 <p>Planned MSPLite features for next update:</p>
